@@ -33,7 +33,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
-          DOCKER_REGISTRY: ${{ steps.login-docker.outputs.registry }}
+          DOCKER_REGISTRY: mayekarruchi
           IMAGE_TAG: ${{ github.sha }}
         run: |
           # Build a docker container and
