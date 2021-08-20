@@ -1,5 +1,2 @@
-FROM alpine:3.5
-RUN apt-get update
-COPY src/main/java/Example.java /usr/src/app/
-EXPOSE 5050
-CMD ["sh"]
+FROM nginx:latest
+COPY ./index.html /usr/share/nginx/html/index.html
